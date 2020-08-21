@@ -1,13 +1,13 @@
-var scores, roundScore, activePlayer, isPlaying;
+let scores, roundScore, activePlayer, isPlaying;
 
 
 newGame();
 
 document.querySelector('.btn-roll').addEventListener('click', function() {
     if(isPlaying) {
-        var dice = Math.floor(Math.random() * 6 + 1);
+        const dice = Math.floor(Math.random() * 6 + 1);
 
-        var diceDOM = document.querySelector('.dice');
+        const diceDOM = document.querySelector('.dice');
         diceDOM.style.display = 'block';
         diceDOM.src = 'img/dice-' + dice + '.png';
 
